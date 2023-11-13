@@ -1,0 +1,123 @@
+/* 
+    Ejercicio 1:
+    Selecciona todos los párrafos en un documento HTML y aplica un fondo de color amarillo a ellos. 
+*/
+p {
+    background-color: yellow;
+}
+
+/* 
+    Ejercicio 2:
+    Selecciona todos los elementos con la clase " special " y cambia su tamaño de fuente a 24px. 
+*/
+.special {
+    font-size: 24px;
+}
+
+/* 
+    Ejercicio 3:
+    Selecciona todos los elementos con la clase " highlight " que sean descendientes de un elemento <div> y cambia su color de fondo a verde.
+*/
+div .highlight {
+    background-color: green;
+}
+
+/* 
+    Ejercicio 4:
+    Selecciona todos los elementos que tengan un atributo href y cambia su color de texto a azul.
+*/
+a[href] {
+    color: #00bfe1;
+}
+
+/* 
+    Ejercicio 5:
+    Selecciona todos los elementos cuyo atributo src termine con " .jpg " y aplica un borde sólido de 2px de color rojo a ellos.
+*/
+*[src$=".jpg"] {
+    border: 2px solid red;
+}
+
+/* 
+    Ejercicio 6:
+    Selecciona todos los enlaces en un documento HTML y aplica un estilo de color de fondo cuando el cursor está sobre ellos.
+*/
+a:hover {
+    background-color: #dbdbdb;
+}
+
+/* 
+    Ejercicio 7:
+    Selecciona todos los párrafos en un documento HTML y aplica un estilo diferente a la primera línea de cada párrafo.
+*/
+p::first-line {
+    font-weight: bold;
+}
+
+/* 
+    Ejercicio 8:
+    Selecciona el primer elemento hijo de una lista y cambia su estilo de fuente a cursiva.
+*/
+li:first-child {
+    font-style: italic;
+}
+
+/* 
+    Ejercicio 9:
+    Selecciona todos los elementos input de tipo text en un formulario y aplica un estilo de borde de color azul cuando están enfocados.
+*/
+input:focus {
+    outline: none;
+}
+input[type="text"]:focus {
+    border: 2px solid #00bfe1;
+}
+
+/* 
+    Ejercicio 10:
+    Selecciona todos los elementos de la clase "warning" y agrega un icono de advertencia antes del contenido.
+*/
+.warning::before {
+    content: "⚠️";
+}
+
+/* 
+    Ejercicio 11:
+    Selecciona todos los elementos <p> que son el último hijo de su contenedor y cambia su estilo de color de fondo a amarillo.
+    Pongo color rosa en vez de amarillo para que no se solape con el ejercicio 1.
+*/
+p:last-child {
+    background-color: pink;
+}
+
+/* 
+    Ejercicio 12:
+    Selecciona todos los elementos de la clase "note" y agrega un icono de nota después del contenido.
+*/
+.note::after {
+    content: "🗒️"
+}
+
+/* 
+    Ejercicio 13:
+    Selecciona todos los enlaces visitados en un documento HTML y cambia su estilo de color de texto a gris.
+*/
+a:visited {
+    color: grey
+}
+
+/* 
+    Ejercicio 14
+    Selecciona todos los elementos con la clase " quote " y aplica un estilo diferente a la primera línea de cada párrafo utilizando.
+*/
+.quote p::first-line {
+    color: red
+}
+
+/* 
+    Ejercicio 15:
+    Selecciona todos los elementos <li> que son hijos impares de una lista y cambia su estilo de fuente a negrita.
+*/
+li:nth-child(odd) {
+    font-weight: bold;
+}
